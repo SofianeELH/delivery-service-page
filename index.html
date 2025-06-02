@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delivery Service</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('background image.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .button-container {
+      position: absolute;
+      top: 55%;  /* هنا كتحدد البلاصة فين غادي يبانوا */
+      left: 20%;
+      transform: translate(-39%, -62%); /* باش يجي فالنص */
+      display: flex;
+      flex-direction: column;
+      gap: 41px;
+    }
+
+    .btn {
+      padding: 25px 100px;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 120px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #128C7E;
+    }
+
+    .btn-instagram {
+      background-color: #C13584;
+    }
+
+    .btn-instagram:hover {
+      background-color: #833AB4;
+    }
+
+    .btn-contact {
+      background-color: #d3d1d1; /* أو اللون اللي بغيتيه */
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    .btn-contact:hover {
+      background-color: #333;
+    }
+
+    
+     .btn-contact-position {
+      position: absolute;
+      top: 90%;   /* عدل هاد القيمة حسب فين باغيها */
+      left: 15%;  /* عدل هاد القيمة حسب فين باغيها */
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        top: 65%; /* adjust for smaller screens */
+
+      }
+      .btn-contact-position {
+        top: 95%;
+        left: 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="button-container">
+      <a class="btn btn-whatsapp" href="https://wa.me/qr/QIRTSVAF2MI7B1" target="_blank">WhatsApp</a>
+      <a class="btn btn-instagram" href="https://www.instagram.com/with_simo.8?igsh=NmVzMXhjYTB4dDVs" target="_blank">Instagram</a>
+    </div>
+    <a class="btn btn-contact" href="https://www.instagram.com/sofiane.el4" target="_blank">@sofiane.el4</a>
+  </div>
+</body>
+</html>
