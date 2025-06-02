@@ -12,18 +12,20 @@
     }
 
     .background {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: url('background.jpg') no-repeat center center;
-      background-size: cover;
-    }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('background2.jpg') no-repeat center center;
+  background-size: contain; /* باش تبان الصورة كاملة بلا Zoom */
+  background-color: #195221;    /* لون أسود إذا كانت الصورة ما كتغطيش كامل الشاشة */
+}
+
 
     .button-container {
       position: absolute;
       top: 55%;  /* هنا كتحدد البلاصة فين غادي يبانوا */
       left: 20%;
-      transform: translate(-39%, -62%); /* باش يجي فالنص */
+      transform: translate(-72%, -50%); /* باش يجي فالنص */
       display: flex;
       flex-direction: column;
       gap: 41px;
